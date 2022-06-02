@@ -2,9 +2,9 @@ body{
     background-color: #2b2a2a;
 }
 div{
-    width: 70%;
+    width: 90%;
     margin: auto;
-    height: 500px;
+    height: 700px;
     display: flex;
     text-align: left;
 }
@@ -46,4 +46,15 @@ div{
 }
 .form button:hover{
     background-color: rgb(212, 117, 219);
+}
+.form button:disabled,
+.form button:disabled:hover,
+.form button:disabled:active{
+    cursor: not-allowed;
+    background-color: rgb(225, 219, 219);
+    color: #2b2a2a;
+    border-color: 2px solid rgb(237, 234, 234);
+}
+.form .error-text{
+    color: red;
 }
